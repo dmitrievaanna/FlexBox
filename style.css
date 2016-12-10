@@ -1,0 +1,234 @@
+#parent1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1000px;
+    background-color: #eee;
+    justify-content: space-between;
+     
+    margin: 5px auto;
+}
+#block-absolute{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top:5px;
+    align-self: center;
+    background-color: #bc4321;
+}
+#block-fixed{
+    width: 150px;
+    height: 50px;
+    position: fixed;
+    vertical-align: middle;
+    align-self: center;
+    bottom:5px;
+    background-color: #bc4321;
+}
+#header{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #acb432;
+    height: 100px;
+}
+.IH{
+    width: 70%;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #bd651a;
+    align-items: flex-end;
+}
+.item-header{
+    list-style-type: none;
+background-color: #eee;
+}
+.item-header1{
+    width: 30%;
+    align-self: stretch;
+   background-color: #888; 
+}
+#main
+{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background-color: #9d2;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    width: 15%;
+    background-color: #a16b9c;
+    align-content: stretch;
+}
+.menu1{
+     height: 40%;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #903;
+    align-items: center;
+}
+.item-menu{
+    list-style-type: none;
+    background-color: #abcabc;
+}
+.menu2{
+    display: flex;
+    flex-direction: column;
+    bottom: 5px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    width: 85%;
+    
+    background-color: #bd651a;
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0px;
+    padding: 0px;
+background-color: #aaa;
+align-content: center;
+}
+.title-content1{
+    height: 100px;
+    
+}
+.cont-content1{
+    background-color: #acb432;
+    padding: 10px;
+    
+}
+.advertising{
+    margin: 0px;
+    padding: 0px;
+  width: 20%;
+    background-color: #df1000;
+}
+#footer{
+    margin: 0px;
+    padding: 10px;
+    background-color: #ac12ac;
+}
+.img1-content1{
+    padding: 0px;
+    margin: 0px;
+    align-self: center;
+    justify-content: center;
+    background-color: #eee;
+    text-align: center;
+    transition: all 1.5s linear;
+}
+.img1-content1:hover{
+    background-color: #ac12ac;
+    transform: rotate(180deg)
+}
+@keyframes key-animation{
+    from{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    to{
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+}
+.img2-content1{
+    align-self: center;
+    justify-content: center;
+    background-color: #eee;
+    text-align: center;
+    animation: key-animation 2s linear;
+}
+@media (max-width: 600px){
+    body{
+        margin: 5px;
+        padding: 0px;
+    }
+    #parent1{
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    #block-absolute{
+        top: 10px;
+    }
+    #title{
+       font-size: 11px; 
+    }
+    #header{
+        flex-direction: column;
+        width: 100%;
+    }
+    #main{
+        width: 100%;
+        flex-direction: column;
+    }
+    .menu{
+        width: 100%;
+        align-items: center;
+    }
+    .content{
+        flex-direction: column;
+        width: 100%;
+    }
+    .IH{
+        width: 30%;
+        flex-direction: column;
+        align-content: stretch;
+        align-items: flex-start;
+    }
+    .item-header1{
+        width: 100px;
+        align-items: flex-end;
+    }
+    .menu1{
+        width: 100%;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu2{
+        width: 100%;
+    }
+    
+    .content1{
+        flex-direction: column;
+        width: 100%;
+    }
+    .advertising{
+        width: 100%;
+    }
+    
+}
